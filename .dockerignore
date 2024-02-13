@@ -1,0 +1,12 @@
+﻿# Folders to ignore
+Cerm.QA.Takehome/bin
+Cerm.QA.Takehome/obj
+
+# Root files to ignore
+.git
+.gitignore
+docker-compose.yml
+Dockerfile
+.dockerignore
+README.md
+requirements.md

@@ -1,0 +1,17 @@
+﻿version: '3.8'
+
+services:
+  todo.web-app:
+    container_name: todo.web
+    image: rubmertens/todo-cerm-qa-takehome:0.0.1
+    ports:
+      - "8080:8080"
+    restart: always
+
+  playwright-tests:
+    container_name: playwright-tests
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - todo.web-app
