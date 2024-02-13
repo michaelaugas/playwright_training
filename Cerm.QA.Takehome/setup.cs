@@ -1,8 +1,8 @@
 ﻿namespace Cerm.QA.Takehome;
 
 public class SetUp {
-    public const string baseUrl = "http://localhost:8080/"; // to be used locally
-    // public const string baseUrl = "http://todo.web-app:8080/"; // to be used via docker-compose
+    // public const string baseUrl = "http://localhost:8080/"; // to be used locally
+    public const string baseUrl = "http://todo.web-app:8080/"; // to be used via docker-compose
     public const string createUrl = baseUrl + "?handler=AddItem";
     public const string setCompleteUrl = baseUrl + "?handler=complete";
     public const string setUncompleteUrl = baseUrl + "?handler=uncomplete";

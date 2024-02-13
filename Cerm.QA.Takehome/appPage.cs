@@ -42,6 +42,8 @@ public class AppPage
   private readonly string completeIcon = "✅";
   private readonly string uncompleteIcon = "❌";
 
+  private readonly string removeIcon = "🗑️";
+
   public AppPage(IPage page)
   {
     _page = page;
@@ -102,7 +104,7 @@ public class AppPage
 
   public async Task RemoveTask(Item item)
   {
-    await GetTableBodyRow(item).GetByText("🗑️").ClickAsync();
+    await GetTableBodyRow(item).GetByText(removeIcon).ClickAsync();
     insertedItems.Remove(item);
   }
 
